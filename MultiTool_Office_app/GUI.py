@@ -441,12 +441,19 @@ class MyFrame(wx.Frame):
     def m_radioBox1OnRadioBox(self, event):
         event.Skip()
 
-    def m_textCtrl3OnTextEnter(self, event):
-        d = {'中文':'zh','日文':'ja','英文':'en',}
+
+
+    def run_task_m_textCtrl3OnTextEnter(self):
+        d = {'中文': 'zh', '日文': 'ja', '英文': 'en', }
         text = self.m_textCtrl3.GetValue()
         lang = d[self.m_radioBox1.GetStringSelection()]
-        result = translate(text,lang)
+        result = translate(text, lang)
         self.m_textCtrl41.SetValue(result)
+
+    def m_textCtrl3OnTextEnter(self, event):
+        thread = threading.Thread(target=self.run_task_m_textCtrl3OnTextEnter)
+        thread.start()
+
 
 
     def m_textCtrl41OnRightDown(self, event):
