@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import wx,os
+import wx, os
 import wx.xrc
 from MultiTool_Office_app import root_dirs_dict
 from MultiTool_Office_app.get_files import list_files, list_dirs
@@ -8,16 +8,16 @@ from MultiTool_Office_app.settings import Settings
 import threading
 import pyperclip as cb
 
+
 class MyFrame(wx.Frame):
     def __init__(self, parent):
-
         self.present_dir = ''
 
         wx.Frame.__init__(self, parent, id=wx.ID_ANY, title=u"MultiTool Office", pos=wx.DefaultPosition,
                           size=wx.Size(800, 800), style=wx.DEFAULT_FRAME_STYLE | wx.TAB_TRAVERSAL)
         icon = wx.Icon(r'MultiTool_Office_app\favicon.ico', wx.BITMAP_TYPE_ICO)
         self.SetIcon(icon)
-        self.SetSizeHints( wx.Size( 600,600 ), wx.DefaultSize )
+        self.SetSizeHints(wx.Size(600, 600), wx.DefaultSize)
         self.SetForegroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_3DLIGHT))
         self.SetBackgroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_BTNFACE))
 
@@ -98,13 +98,13 @@ class MyFrame(wx.Frame):
         m_listBox13Choices = [i for i in list_dirs(self.present_dir)]
         self.m_listBox13 = wx.ListBox(self.m_panel16, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, m_listBox13Choices,
                                       wx.LB_SORT)
-        self.m_listBox13.SetMaxSize( wx.Size( 120,-1 ) )
+        self.m_listBox13.SetMaxSize(wx.Size(120, -1))
         bSizer16.Add(self.m_listBox13, 0, wx.ALL | wx.EXPAND, 5)
 
         m_listBox12Choices = []
         self.m_listBox12 = wx.ListBox(self.m_panel16, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, m_listBox12Choices,
                                       wx.LB_SORT)
-        self.m_listBox12.SetMinSize( wx.Size(200,-1 ) )
+        self.m_listBox12.SetMinSize(wx.Size(200, -1))
         bSizer16.Add(self.m_listBox12, 1, wx.ALL | wx.EXPAND, 5)
 
         bSizer14.Add(bSizer16, 1, wx.EXPAND, 5)
@@ -193,10 +193,11 @@ class MyFrame(wx.Frame):
         bSizer12.Add(self.m_radioBox1, 0, wx.ALL | wx.EXPAND, 5)
 
         self.m_textCtrl3 = wx.TextCtrl(self.m_panel4, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize,
-                                       wx.TE_PROCESS_ENTER|wx.TE_MULTILINE)
+                                       wx.TE_PROCESS_ENTER | wx.TE_MULTILINE)
         bSizer12.Add(self.m_textCtrl3, 1, wx.ALL | wx.EXPAND, 5)
 
-        self.m_textCtrl41 = wx.TextCtrl(self.m_panel4, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, wx.TE_MULTILINE)
+        self.m_textCtrl41 = wx.TextCtrl(self.m_panel4, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize,
+                                        wx.TE_MULTILINE)
         bSizer12.Add(self.m_textCtrl41, 1, wx.ALL | wx.EXPAND, 5)
 
         self.m_panel4.SetSizer(bSizer12)
@@ -367,7 +368,7 @@ class MyFrame(wx.Frame):
 
     def m_listBox12OnRightDown(self, event):
         dir_path = os.path.join(self.present_dir, self.m_listBox13.GetStringSelection(),
-                                 self.m_listBox12.GetStringSelection())
+                                self.m_listBox12.GetStringSelection())
         os.startfile(dir_path)
 
     def m_listBox14OnLeftDClick(self, event):
@@ -394,7 +395,7 @@ class MyFrame(wx.Frame):
 
     def m_listBox14OnRightDown(self, event):
         dir_path = os.path.join(self.present_dir, self.m_listBox13.GetStringSelection(),
-                                 self.m_listBox12.GetStringSelection(), self.m_listBox14.GetStringSelection())
+                                self.m_listBox12.GetStringSelection(), self.m_listBox14.GetStringSelection())
         os.startfile(dir_path)
 
     def m_listBox17OnLeftDClick(self, event):
@@ -418,8 +419,8 @@ class MyFrame(wx.Frame):
 
     def m_listBox17OnRightDown(self, event):
         dir_path = os.path.join(self.present_dir, self.m_listBox13.GetStringSelection(),
-                                 self.m_listBox12.GetStringSelection(), self.m_listBox14.GetStringSelection(),
-                                 self.m_listBox17.GetStringSelection())
+                                self.m_listBox12.GetStringSelection(), self.m_listBox14.GetStringSelection(),
+                                self.m_listBox17.GetStringSelection())
         os.startfile(dir_path)
 
     def m_listBox5OnLeftDClick(self, event):
@@ -441,8 +442,6 @@ class MyFrame(wx.Frame):
     def m_radioBox1OnRadioBox(self, event):
         event.Skip()
 
-
-
     def run_task_m_textCtrl3OnTextEnter(self):
         d = {'中文': 'zh', '日文': 'ja', '英文': 'en', }
         text = self.m_textCtrl3.GetValue()
@@ -453,8 +452,6 @@ class MyFrame(wx.Frame):
     def m_textCtrl3OnTextEnter(self, event):
         thread = threading.Thread(target=self.run_task_m_textCtrl3OnTextEnter)
         thread.start()
-
-
 
     def m_textCtrl41OnRightDown(self, event):
         event.Skip()
