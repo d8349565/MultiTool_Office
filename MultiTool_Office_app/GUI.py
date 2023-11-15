@@ -5,16 +5,20 @@ from MultiTool_Office_app import root_dirs_dict
 from MultiTool_Office_app.get_files import list_files, list_dirs
 from MultiTool_Office_app.translate import translate
 from MultiTool_Office_app.settings import Settings
-import threading
+import threading,json
 import pyperclip as cb
 
 
 class MyFrame(wx.Frame):
+
     def __init__(self, parent):
         self.present_dir = ''
-
+        with open('MultiTool_Office_app\\settings.json', 'r') as file:
+            data = json.load(file)
+        x = data['size_x']
+        y = data['size_y']
         wx.Frame.__init__(self, parent, id=wx.ID_ANY, title=u"MultiTool Office", pos=wx.DefaultPosition,
-                          size=wx.Size(800, 800), style=wx.DEFAULT_FRAME_STYLE | wx.TAB_TRAVERSAL)
+                          size=wx.Size(x, y), style=wx.DEFAULT_FRAME_STYLE | wx.TAB_TRAVERSAL)
         icon = wx.Icon(r'MultiTool_Office_app\favicon.ico', wx.BITMAP_TYPE_ICO)
         self.SetIcon(icon)
         self.SetSizeHints(wx.Size(600, 600), wx.DefaultSize)
@@ -98,7 +102,7 @@ class MyFrame(wx.Frame):
         m_listBox13Choices = [i for i in list_dirs(self.present_dir)]
         self.m_listBox13 = wx.ListBox(self.m_panel16, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, m_listBox13Choices,
                                       wx.LB_SORT)
-        self.m_listBox13.SetMaxSize(wx.Size(120, -1))
+        self.m_listBox13.SetMaxSize(wx.Size(150, -1))
         bSizer16.Add(self.m_listBox13, 0, wx.ALL | wx.EXPAND, 5)
 
         m_listBox12Choices = []
