@@ -46,14 +46,12 @@ class Settings(wx.Dialog):
 
         self.Centre(wx.BOTH)
 
-        # Connect Events
         self.m_button_delete.Bind(wx.EVT_BUTTON, self.m_button_deleteOnButtonClick)
         self.m_button_add_dir.Bind(wx.EVT_BUTTON, self.m_button_add_dirOnButtonClick)
 
     def __del__(self):
         pass
 
-    # Virtual event handlers, override them in your derived class
     def m_button_deleteOnButtonClick(self, event):
         selected = self.m_listBox6.GetStringSelection()
         new_dirs = root_dirs

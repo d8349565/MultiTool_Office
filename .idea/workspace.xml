@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e35e40e9-f876-4998-818e-aefb7559b66e" name="更改" comment="添加图片压缩的代码部分，暂未添加到GUI">
+    <list default="true" id="e35e40e9-f876-4998-818e-aefb7559b66e" name="更改" comment="可自行设置软件窗口尺寸">
+      <change afterPath="$PROJECT_DIR$/MultiTool Office - 202403.fbp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiTool_Office_app/GUI_add.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/MultiTool_Office.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiTool Office.fbp" beforeDir="false" afterPath="$PROJECT_DIR$/MultiTool Office.fbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiTool_Office_app/GUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/MultiTool_Office_app/GUI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiTool_Office_app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/MultiTool_Office_app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiTool_Office_app/get_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/MultiTool_Office_app/get_files.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiTool_Office_app/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/MultiTool_Office_app/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiTool_Office_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MultiTool_Office_app/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiTool_Office_app/translate.py" beforeDir="false" afterPath="$PROJECT_DIR$/MultiTool_Office_app/translate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_2.1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex_tools/Lossless_to_Image.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex_tools/Lossless_to_Image.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +80,7 @@
       <recent name="F:\Python_files\MultiTool_Office" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.app">
+  <component name="RunManager" selected="Python.app_2.1">
     <configuration name="Lossless_to_Image" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MultiTool_Office" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -116,8 +125,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="app_2.1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MultiTool_Office" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app_2.1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app_2.1" />
         <item itemvalue="Python.app" />
         <item itemvalue="Python.Lossless_to_Image" />
       </list>
@@ -165,9 +197,23 @@
       <updated>1698852183235</updated>
       <workItem from="1698852183779" duration="278000" />
       <workItem from="1699011916647" duration="880000" />
-      <workItem from="1700043970537" duration="1122000" />
+      <workItem from="1700043970537" duration="2567000" />
+      <workItem from="1700395625513" duration="55000" />
+      <workItem from="1700402426127" duration="3000" />
+      <workItem from="1701079392017" duration="28000" />
+      <workItem from="1701249682191" duration="1146000" />
+      <workItem from="1701435229295" duration="35000" />
+      <workItem from="1711548092989" duration="524000" />
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="可自行设置软件窗口尺寸">
+      <option name="closed" value="true" />
+      <created>1700053715069</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700053715069</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +233,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="将翻译任务修改为新增线程来处理" />
     <MESSAGE value="添加图片压缩的代码部分，暂未添加到GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加图片压缩的代码部分，暂未添加到GUI" />
+    <MESSAGE value="可自行设置软件窗口尺寸" />
+    <option name="LAST_COMMIT_MESSAGE" value="可自行设置软件窗口尺寸" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MultiTool_Office$config.coverage" NAME="config 覆盖结果" MODIFIED="1697642884458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MultiTool_Office_app" />
@@ -195,7 +242,7 @@
     <SUITE FILE_PATH="coverage/MultiTool_Office$get_files.coverage" NAME="get_files 覆盖结果" MODIFIED="1697554576048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MultiTool_Office_app" />
     <SUITE FILE_PATH="coverage/MultiTool_Office$demo__1_.coverage" NAME="热键demo (1) 覆盖结果" MODIFIED="1697468639409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MultiTool_Office_app" />
     <SUITE FILE_PATH="coverage/MultiTool_Office$demo.coverage" NAME="demo 覆盖结果" MODIFIED="1697468468156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MultiTool_Office_app" />
-    <SUITE FILE_PATH="coverage/MultiTool_Office$app.coverage" NAME="app 覆盖结果" MODIFIED="1700045099231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MultiTool_Office$app.coverage" NAME="app 覆盖结果" MODIFIED="1701249941267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MultiTool_Office$GUI.coverage" NAME="GUI 覆盖结果" MODIFIED="1697550307898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MultiTool_Office_app" />
     <SUITE FILE_PATH="coverage/MultiTool_Office$main__1_.coverage" NAME="main (1) 覆盖结果" MODIFIED="1697715353950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MultiTool_Office$main.coverage" NAME="main 覆盖结果" MODIFIED="1697640482208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -205,6 +252,7 @@
     <SUITE FILE_PATH="coverage/MultiTool_Office$GUI__1_.coverage" NAME="GUI (1) 覆盖结果" MODIFIED="1697641294772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/备份/20231017版本/MultiTool_Office_app" />
     <SUITE FILE_PATH="coverage/MultiTool_Office$app__1_.coverage" NAME="app (1) 覆盖结果" MODIFIED="1698848823669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MultiTool_Office$onchar_hook.coverage" NAME="onchar_hook示例 覆盖结果" MODIFIED="1697546261744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MultiTool_Office_app" />
+    <SUITE FILE_PATH="coverage/MultiTool_Office$app_2_1.coverage" NAME="app_2.1 覆盖结果" MODIFIED="1711548465539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MultiTool_Office$settings.coverage" NAME="settings 覆盖结果" MODIFIED="1697643657447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MultiTool_Office_app" />
     <SUITE FILE_PATH="coverage/MultiTool_Office$Lossless_to_Image.coverage" NAME="Lossless_to_Image 覆盖结果" MODIFIED="1698851334145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ex_tools" />
   </component>

@@ -209,7 +209,7 @@ class MyFrame(wx.Frame):
         bSizer12.Fit(self.m_panel4)
         self.m_notebook8.AddPage(self.m_panel4, u"文本翻译", False)
         self.m_panel5 = wx.Panel(self.m_notebook8, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL)
-        self.m_notebook8.AddPage(self.m_panel5, u"ChatBot", False)
+        # self.m_notebook8.AddPage(self.m_panel5, u"其他独立程序", False)
 
         bSizer5.Add(self.m_notebook8, 1, wx.ALL | wx.EXPAND, 5)
 
