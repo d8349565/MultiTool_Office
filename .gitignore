@@ -4,3 +4,4 @@ app_2.2.spec
 /build
 /MultiTool_Office_app/app_2.2.spec
 MultiTool_Office_app/__pycache__
+app.spec

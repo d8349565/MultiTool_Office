@@ -501,8 +501,7 @@ class MyFrame(wx.Frame):
                                     self.m_listBox17.GetStringSelection(), 
                                     self.m_listBox5.GetStringSelection())
             if os.path.exists(file_path):
-                import subprocess
-                subprocess.Popen(['explorer', file_path], shell=True)
+                os.startfile(file_path)                
             else:
                 wx.MessageBox("文件不存在", "错误", wx.OK | wx.ICON_ERROR)
         except Exception as e:
