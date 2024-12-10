@@ -1,0 +1,6 @@
+app_2.2.spec
+/.venv
+/dist
+/build
+/MultiTool_Office_app/app_2.2.spec
+MultiTool_Office_app/__pycache__
