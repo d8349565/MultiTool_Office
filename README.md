@@ -2,6 +2,8 @@
 
 MultiTool Office 是一个基于 wxPython 开发的多功能办公工具，提供文件管理、文本翻译和快捷启动程序等功能。
 
+<img src="assets/image-20241210095924916.png" alt="image-20241210095924916" style="zoom:50%;" />
+
 ## 主要功能
 
 ### 1. 文件管理
