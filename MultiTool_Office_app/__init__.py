@@ -31,9 +31,24 @@ class Config:
     def get_default_config():
         return {
             "root_dirs": ["./"],
-            "size_x": 700,
-            "size_y": 600
+            "size_x": 800,
+            "size_y": 700,
+            "theme": "modern",
+            "cache_size": 128
         }
+
+    def get(self, key, default=None):
+        return self.data.get(key, default)
+    
+    def set(self, key, value):
+        self.data[key] = value
+        
+    def save(self):
+        try:
+            with self.config_path.open('w', encoding='utf-8') as f:
+                json.dump(self.data, f, ensure_ascii=False, indent=2)
+        except Exception as e:
+            print(f"保存配置失败: {e}")
 
 wx = wx
 xrc = wx.xrc
@@ -47,7 +62,7 @@ def verify_dirs(dirs):
     return valid_dirs if valid_dirs else ["."]
 
 try:
-    with open('MultiTool_Office_app\\settings.json', 'r') as file:
+    with open('MultiTool_Office_app\\settings.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
     root_dirs = verify_dirs(data.get('root_dirs', ["."]))
     root_dirs_dict = {os.path.basename(i): i for i in root_dirs}
